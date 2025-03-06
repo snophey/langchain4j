@@ -13,7 +13,16 @@ The protocol specifies two types of transport, both of these are supported:
   communicate with it directly via standard input/output.
 
 To let your chat model or AI service run tools provided by an MCP server,
-you need to create an instance of an MCP tool provider.
+you need to create an instance of an MCP tool provider. But first, be sure
+to install the `langchain4j-mcp` dependency:
+
+```xml
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-mcp</artifactId>
+    <version>1.0.0-beta1</version>
+</dependency>
+```
 
 ## Creating an MCP tool provider
 
